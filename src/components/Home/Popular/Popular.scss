@@ -1,0 +1,154 @@
+@import "../../../assets/styles/main.scss";
+@import "../../../assets/styles/global.scss";
+
+.popular {
+  margin-top: 8rem;
+  @media (max-width: $container-md) {
+    margin-top: 4rem;
+  }
+  .container {
+    margin: auto;
+    margin-left: 80px;
+    @media (max-width: $container-md) {
+      margin-left: 20px;
+    }
+    .head {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      padding-right: 80px;
+      @media (max-width: $container-md) {
+        margin-bottom: 2rem;
+        padding-right: 20px;
+      }
+
+      h2 {
+        color: $primary-text-color;
+        font-family: $title-font;
+        font-size: $text-8xl;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        @media (max-width: $container-md) {
+          font-size: $text-6xl;
+          margin-bottom: 0;
+        }
+      }
+
+      .navigation {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+
+        button {
+          @include button(secondary, lg);
+
+          @media (max-width: $container-md) {
+            padding: 14px 14px;
+          }
+          img {
+            user-select: none;
+            @media (max-width: $container-md) {
+              height: 12px;
+              width: 12px;
+            }
+          }
+        }
+
+        .prev {
+          img {
+            rotate: 180deg;
+          }
+
+          &:hover {
+            scale: 0.9;
+          }
+        }
+
+        .next {
+          &:hover {
+            scale: 0.9;
+          }
+        }
+
+        .disable {
+          opacity: 0.5;
+          pointer-events: none;
+        }
+      }
+    }
+
+    .items {
+      .react-multi-carousel-track {
+        gap: 20px;
+      }
+      .item {
+        background-color: $white;
+        border-radius: 16px;
+        padding: 8px 20px;
+        padding-top: 100px;
+        text-align: center;
+        @media (max-width: $container-md) {
+          padding-top: 50px;
+        }
+        .img {
+          scale: 1.1;
+          user-select: none;
+          @media (max-width: $container-md) {
+            min-width: max-content;
+            scale: 1;
+          }
+          img {
+            user-select: none;
+          }
+        }
+        .info {
+          margin-top: 4rem;
+          @media (max-width: $container-md) {
+            margin-top: 3rem;
+          }
+          h3 {
+            color: $primary-text-color;
+            font-family: $title-font;
+            font-size: $text-5xl;
+          }
+          .stars {
+            align-items: center;
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 20px;
+            user-select: none;
+            img {
+              width: 22px;
+              width: 22px;
+            }
+          }
+          p {
+            color: $secondary-color;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-top: 20px;
+          }
+        }
+        .footer {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+          margin-top: 3.5rem;
+          .price {
+            color: $primary-text-color;
+            font-family: $title-font;
+            font-size: $text-5xl;
+          }
+          button {
+            @include button(secondary, md);
+            font-weight: 700;
+            padding: 22px 24px;
+          }
+        }
+      }
+    }
+  }
+}
