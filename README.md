@@ -68,7 +68,7 @@ In this project, from the beginning with figma wireframe design and figma UI des
 
 ## Screenshots
 
-![screenshot](./src/assets/images/screenshot.png)
+![screenshot](./readmeAssets/screenshots/screenshot.png)
 
 ---
 
