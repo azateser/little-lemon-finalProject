@@ -80,47 +80,47 @@ In this project, from the beginning with figma wireframe design and figma UI des
 
 ## Todos
 
-[x] Figma wireframe design
-[x] Figma UI design
-[x] Create folder structure
-[x] Create components
-[x] Create pages
-[x] Create routes
-[x] Create styles
-[x] Create assets
-[x] Create README.md
-[x] Header
-    [x] Component
-    [x] Responsive
-    [x] States
-    [x] Mobile Menu
-[x] Slider
-    [x] Component
-    [x] Responsive
-    [x] States
-[x] Popular Dishes
-    [x] Component
-    [x] Responsive
-    [x] States
-[ ] About Us
-    [ ] Component
-    [ ] Responsive
-[ ] Menu
-    [ ] Component
-    [ ] Responsive
-[ ] Reservation
-    [ ] Component
-    [ ] Responsive
-[ ] Mobile App
-    [ ] Component
-    [ ] Responsive
-[ ] Footer
-    [ ] Component
-    [ ] Responsive
-[ ] Reservation Modal
-    [ ] Component
-    [ ] Responsive
-    [ ] Booking System
+[x] Figma wireframe design <br />
+[x] Figma UI design <br />
+[x] Create folder structure <br />
+[x] Create components <br />
+[x] Create pages <br />
+[x] Create routes <br />
+[x] Create styles <br />
+[x] Create assets <br />
+[x] Create README.md <br />
+[x] Header <br />
+    [x] Component <br />
+    [x] Responsive <br />
+    [x] States <br />
+    [x] Mobile Menu <br />
+[x] Slider <br />
+    [x] Component <br />
+    [x] Responsive <br />
+    [x] States <br />
+[x] Popular Dishes <br />
+    [x] Component <br />
+    [x] Responsive <br />
+    [x] States <br />
+[ ] About Us <br />
+    [ ] Component <br />
+    [ ] Responsive <br />
+[ ] Menu <br />
+    [ ] Component <br />
+    [ ] Responsive <br />
+[ ] Reservation <br />
+    [ ] Component <br />
+    [ ] Responsive <br />
+[ ] Mobile App <br />
+    [ ] Component <br />
+    [ ] Responsive <br />
+[ ] Footer <br />
+    [ ] Component <br />
+    [ ] Responsive <br />
+[ ] Reservation Modal <br />
+    [ ] Component <br />
+    [ ] Responsive <br />
+    [ ] Booking System <br />
 
 
 
