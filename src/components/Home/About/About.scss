@@ -1,0 +1,120 @@
+@import "../../../assets/styles/main.scss";
+@import "../../../assets/styles/global.scss";
+
+.about {
+  margin-top: 10rem;
+  @media (max-width: $container-md) {
+    margin-top: 2rem;
+    padding: 0 20px;
+  }
+  .container {
+    // align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    margin: auto;
+    max-width: $container-md;
+    @media (max-width: $container-md) {
+      flex-direction: column;
+    }
+    .image {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      width: 66%;
+      @media (max-width: $container-md) {
+        width: 100%;
+      }
+      img {
+        width: 75%;
+        @media (max-width: $container-md) {
+          width: 100%;
+        }
+      }
+
+      .cheese {
+        bottom: 0;
+        left: 30px;
+        position: absolute;
+        width: 122px;
+        @media (max-width: $container-md) {
+          display: none;
+        }
+      }
+      .salad {
+        position: absolute;
+        right: 100px;
+        top: 0;
+        width: 122px;
+        @media (max-width: $container-md) {
+          display: none;
+        }
+      }
+    }
+    .information {
+      margin-right: 4rem;
+      margin-top: 5rem;
+      width: 43%;
+
+      @media (max-width: $container-md) {
+        margin-top: 2rem;
+        text-align: center;
+        width: 100%;
+      }
+      h1 {
+        color: $black;
+        font-family: $title-font;
+        font-size: $text-8xl;
+        @media (max-width: $container-md) {
+          font-size: $text-6xl;
+        }
+      }
+      p {
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 2rem;
+        @media (max-width: $container-md) {
+          margin-top: 1rem;
+        }
+      }
+      ul {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 2rem;
+        li {
+          align-items: center;
+          color: $primary-text-color;
+          display: flex;
+          font-family: $title-font;
+          font-size: $text-xl;
+          gap: 4px;
+          img {
+            background-color: $white;
+            border: 2px dashed $tertiary-color;
+            border-radius: 9999px;
+            line-height: 0;
+            margin-right: 1rem;
+            padding: 8px;
+            width: 2rem;
+            width: 34px;
+            @media (max-width: $container-md) {
+              margin-right: 0.5rem;
+              width: 24px;
+            }
+          }
+        }
+      }
+      button {
+        margin-top: 2rem;
+        padding: 24px 30px !important;
+        @include button(primary, lg);
+        @media (max-width: $container-md) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -102,9 +102,9 @@ In this project, from the beginning with figma wireframe design and figma UI des
     - [x] Component <br />
     - [x] Responsive <br />
     - [x] States <br />
-- [ ] About Us <br />
-    - [ ] Component <br />
-    - [ ] Responsive <br />
+- [x] About Us <br />
+    - [x] Component <br />
+    - [x] Responsive <br />
 - [ ] Menu <br />
     - [ ] Component <br />
     - [ ] Responsive <br />

@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header/Header';
+import About from '../../components/Home/About/About';
 import Popular from '../../components/Home/Popular/Popular';
 import Slider from '../../components/Home/Slider/Slider';
 
@@ -11,6 +12,7 @@ const Home = () => {
         <Header />
         <Slider />
         <Popular />
+        <About />
     </div>
   )
 }
