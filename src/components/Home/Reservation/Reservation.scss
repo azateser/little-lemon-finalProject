@@ -1,0 +1,56 @@
+@import "../../../assets/styles/main.scss";
+@import "../../../assets/styles/global.scss";
+
+.reservation {
+  margin-top: 10rem;
+  @media (max-width: $container-md) {
+    margin-top: 5rem;
+  }
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: $container-md;
+    @media (max-width: $container-md) {
+      flex-direction: column;
+      padding: 0 1rem;
+    }
+    .info {
+      margin-left: 3rem;
+      @media (max-width: $container-md) {
+        margin-left: 0rem;
+        text-align: center;
+      }
+      h1 {
+        color: $black;
+        font-family: $title-font;
+        font-size: 54px;
+        @media (max-width: $container-md) {
+          font-size: $text-8xl;
+        }
+      }
+      p {
+        font-weight: 400;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        @media (max-width: $container-md) {
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+      }
+      button {
+        @include button(primary, md);
+        padding: 26px 24px;
+      }
+    }
+    .image {
+      width: 100%;
+      img {
+        margin-left: -32px;
+        width: 110%;
+      }
+    }
+  }
+}

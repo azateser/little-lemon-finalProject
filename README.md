@@ -105,13 +105,13 @@ In this project, from the beginning with figma wireframe design and figma UI des
 - [x] About Us <br />
     - [x] Component <br />
     - [x] Responsive <br />
-- [x] Menu <br />
+- [x] Menu Section <br />
     - [x] Component <br />
     - [x] Responsive <br />
-- [ ] Reservation <br />
-    - [ ] Component <br />
-    - [ ] Responsive <br />
-- [ ] Mobile App <br />
+- [x] Reservation Section <br />
+    - [x] Component <br />
+    - [x] Responsive <br />
+- [ ] Mobile App Section <br />
     - [ ] Component <br />
     - [ ] Responsive <br />
 - [ ] Footer <br />

@@ -1,0 +1,104 @@
+@import "../../../assets/styles/main.scss";
+@import "../../../assets/styles/global.scss";
+
+.mobileApp {
+  margin-top: 8rem;
+  @media (max-width: $container-md) {
+    display: none;
+  }
+  .container {
+    background-color: #fff6e7;
+    border-radius: 20px;
+    margin: auto;
+    max-width: $container-md;
+    position: relative;
+    .texts {
+      max-width: 650px;
+      padding: 5rem 6rem;
+
+      h1 {
+        color: $black;
+        font-family: $title-font;
+        font-size: 50px;
+      }
+      p {
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        max-width: 550px;
+      }
+      .buttons {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+        .apple {
+          &:hover {
+            box-shadow: 0 8px 10px 0px rgb(0 0 0 / 10%);
+          }
+          align-items: center;
+          background: $primary-color;
+          border: 2px solid $white;
+          border-radius: 9999px;
+          cursor: pointer;
+          display: flex;
+          gap: 6px;
+          padding: 8px 20px;
+          transition: $transition-default;
+          .text {
+            color: $primary-text-color;
+            text-align: left;
+            h3 {
+              font-size: 10px;
+            }
+            h2 {
+              font-size: 12px;
+              font-weight: 600;
+            }
+          }
+        }
+        .playStore {
+          &:hover {
+            box-shadow: 0 8px 10px 0px rgb(0 0 0 / 10%);
+          }
+          align-items: center;
+          background: $white;
+          border: 2px solid $primary-color;
+          border-radius: 9999px;
+          cursor: pointer;
+          display: flex;
+          gap: 6px;
+          padding: 8px 20px;
+          transition: $transition-default;
+          .text {
+            color: $primary-text-color;
+            text-align: left;
+            h3 {
+              font-size: 10px;
+            }
+            h2 {
+              font-size: 12px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+  .phone{
+    position: absolute;
+    right: 200px;
+    top: 0;
+    img{
+      width: 100%;
+    }
+  }
+  .sus{
+    bottom: 0;
+    position: absolute;
+    right: 40px;
+    img{
+      width: 100%;
+    }
+  }
+}
