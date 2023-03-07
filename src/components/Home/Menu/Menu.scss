@@ -1,0 +1,120 @@
+@import "../../../assets/styles/main.scss";
+@import "../../../assets/styles/global.scss";
+
+.our-menu {
+  margin-top: 13rem;
+  .container {
+    margin: auto;
+    max-width: $container-md;
+
+    .title {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+        
+        h1 {
+          color: $black;
+          font-family: $title-font;
+          font-size: $text-8xl;
+          @media (max-width: $container-md) {
+              font-size: $text-6xl;
+          }
+      }
+      ul {
+        align-items: center;
+        color: $primary-text-color;
+        display: flex;
+        gap: 16px;
+        @media (max-width: $container-md) {
+            display: grid;
+            
+            grid-template-columns: repeat(2, 1fr);
+          }
+        li {
+            @include button(secondary, md);
+            font-size: $text-lg;
+            padding: 24px 32px;
+        }
+      }
+    }
+    .items {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 2rem;
+        @media (max-width: $container-md) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+        .item {
+            background-color: $white;
+            border-radius: 16px;
+            padding: 8px 20px;
+            padding-top: 100px;
+            text-align: center;
+            @media (max-width: $container-md) {
+              padding-top: 50px;
+            }
+            .img {
+              scale: 1.1;
+              user-select: none;
+              @media (max-width: $container-md) {
+                min-width: max-content;
+                scale: 1;
+              }
+              img {
+                user-select: none;
+              }
+            }
+            .info {
+              margin-top: 4rem;
+              @media (max-width: $container-md) {
+                margin-top: 3rem;
+              }
+              h3 {
+                color: $primary-text-color;
+                font-family: $title-font;
+                font-size: $text-5xl;
+              }
+              .stars {
+                align-items: center;
+                display: flex;
+                gap: 8px;
+                justify-content: center;
+                margin-top: 20px;
+                user-select: none;
+                img {
+                  width: 22px;
+                  width: 22px;
+                }
+              }
+              p {
+                color: $secondary-color;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-top: 20px;
+              }
+            }
+            .footer {
+              align-items: center;
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 1rem;
+              margin-top: 3.5rem;
+              .price {
+                color: $primary-text-color;
+                font-family: $title-font;
+                font-size: $text-5xl;
+              }
+              button {
+                @include button(secondary, md);
+                font-weight: 700;
+                padding: 22px 24px;
+              }
+            }
+          }
+    }
+  }
+}

@@ -95,3 +95,32 @@ export const popular = [
     },
     
 ]
+
+
+
+export const menuCategories = [
+    {
+        id: 0,
+        name: "Turkish",
+    },
+    {
+        id: 1,
+        name: "Maxican",
+    },
+    {
+        id: 2,
+        name: "Italian",
+    },
+    {
+        id: 3,
+        name: "Special Foods",
+    },
+    {
+        id: 4,
+        name: "Drinks",
+    },
+    {
+        id: 5,
+        name: "Launch",
+    }
+]
