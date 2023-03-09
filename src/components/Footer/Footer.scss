@@ -1,0 +1,117 @@
+@import "../../assets/styles/main.scss";
+@import "../../assets/styles/global.scss";
+
+.footer {
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+  .container {
+    margin: auto;
+    max-width: 1150px;
+
+    .logo {
+      border-bottom: 1px solid $secondary-color;
+      padding-bottom: 1rem;
+      @media (max-width: $container-md) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      img {
+        width: 200px;
+      }
+    }
+    .content {
+      display: flex;
+
+      margin-top: 3rem;
+      @media (max-width: $container-md) {
+        flex-direction: column;
+      }
+
+      .newsletter {
+        min-width: 350px;
+
+        @media (max-width: $container-md) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-width: none;
+          text-align: center;
+        }
+
+        h2 {
+          color: $black;
+          font-family: $title-font;
+          font-size: $text-4xl;
+          margin-bottom: 1rem;
+          max-width: 17ch;
+          @media (max-width: $container-md) {
+            max-width: none;
+          }
+        }
+        .subscribe {
+          margin-bottom: 1rem;
+
+          input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $secondary-color;
+            font-weight: 500;
+            min-width: 200px;
+            outline: none;
+            padding: 8px 4px;
+          }
+          button {
+            @include button(primary, lg);
+            margin-left: 6px;
+            padding: 12px 12px;
+          }
+        }
+
+        .social {
+          button {
+            @include button(secondary, lg);
+            border-color: $primary-text-color;
+            border-width: 1px;
+            line-height: 0;
+            margin-left: 6px;
+            padding: 12px 12px;
+            img {
+              height: 14px;
+              width: 14px;
+            }
+          }
+        }
+      }
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @media (max-width: $container-md) {
+          flex-direction: column;
+          margin-top: 1rem;
+          text-align: center;
+        }
+        .menu-item {
+          h3 {
+            color: $black;
+            font-family: $title-font;
+            font-size: $text-2xl;
+            margin-bottom: 1.3rem;
+          }
+          ul {
+            li {
+              cursor: pointer;
+              font-weight: 400;
+              margin-bottom: 1rem;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

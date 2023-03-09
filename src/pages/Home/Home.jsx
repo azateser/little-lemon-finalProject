@@ -6,6 +6,7 @@ import MobileApp from '../../components/Home/MobileApp/MobileApp';
 import Popular from '../../components/Home/Popular/Popular';
 import Reservation from '../../components/Home/Reservation/Reservation';
 import Slider from '../../components/Home/Slider/Slider';
+import Footer from '../../components/Footer/Footer';
 
 import "./Home.scss"
 
@@ -19,6 +20,7 @@ const Home = () => {
         <Menu />
         <Reservation />
         <MobileApp />
+        <Footer />
     </div>
   )
 }
