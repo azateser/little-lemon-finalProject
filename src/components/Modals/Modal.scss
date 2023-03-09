@@ -1,0 +1,315 @@
+@import "../../assets/styles/global.scss";
+@import "../../assets/styles/main.scss";
+
+.modal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  .content {
+    background-color: #fffcf7;
+    border-radius: 12px;
+    width: 45%;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+
+    .header {
+      background-color: $primary-color;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      color: $primary-text-color;
+      font-family: $title-font;
+      font-size: $text-8xl;
+      padding: 1rem 0;
+      position: relative;
+      text-align: center;
+      .close-modal {
+        @include button(primary, lg);
+        padding: 0.8rem;
+        position: absolute;
+        right: -15px;
+        top: -15px;
+
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+    .body {
+      padding: 1rem 2rem;
+      h3 {
+        border-left: 8px solid $primary-color;
+        color: $primary-text-color;
+        font-family: $title-font;
+        font-size: $text-5xl;
+        margin: 1rem 0;
+        padding-left: 1rem;
+      }
+
+      .form {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        .form-group {
+          display: flex;
+          gap: 2rem;
+          margin-bottom: 1.3rem;
+          position: relative;
+          width: 100%;
+          .form-item {
+            align-items: end;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            input {
+              background-color: transparent;
+              border: none;
+              border-bottom: 2px solid #d9d9d9;
+              outline: none;
+              padding: 4px 0;
+
+              transition: $transition-short;
+              width: 100%;
+              &:focus {
+                border-bottom: 4px solid $primary-color !important;
+              }
+            }
+            label {
+              position: absolute;
+              right: 0;
+              top: 0;
+              path {
+                transition: $transition-short;
+              }
+            }
+
+            &:hover {
+              input {
+                border-bottom: 2px solid $primary-color;
+              }
+              label {
+                svg {
+                  path {
+                    fill: $primary-color !important;
+                  }
+                }
+              }
+            }
+
+            span {
+              background-color: transparent;
+              border: none;
+              border-bottom: 2px solid #d9d9d9;
+              font-size: $text-md;
+              font-weight: 400;
+              outline: none;
+              padding: 4px 0;
+              width: 100%;
+            }
+
+            .number {
+              align-items: center;
+              display: flex;
+              gap: 8px;
+              margin-left: 14px;
+              margin-right: 14px;
+              span {
+                border: none;
+                font-size: $text-lg;
+              }
+              .minus,
+              .plus {
+                background-color: $primary-color;
+                border: none;
+                border: 2px solid $white;
+                border-radius: 6px;
+                cursor: pointer;
+                line-height: 0;
+                padding: 6px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  background-color: $white;
+                  border: 2px solid $primary-color;
+                }
+              }
+              .plus svg {
+                height: 10px;
+                rotate: 180deg;
+                width: 10px;
+              }
+            }
+          }
+
+          .status {
+            align-items: center;
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            top: -8px;
+            .statu {
+              align-items: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              span {
+                font-size: $text-sm;
+                font-weight: 400;
+                margin-bottom: 2px;
+              }
+              div {
+                background-color: $secondary-color;
+                border-radius: 2px;
+                height: 12px;
+                width: 12px;
+              }
+              #available {
+                background-color: #10b981;
+              }
+              #pending {
+                background-color: #ffd900;
+              }
+              #booked {
+                background-color: #f43249;
+              }
+            }
+          }
+        }
+
+        .tables {
+          margin-top: 1rem;
+          .table-item {
+            margin-top: 1rem;
+            position: relative;
+            transition: all 150ms ease-in-out;
+            width: max-content;
+            .chair {
+              background-color: $secondary-color;
+              border-radius: 2px;
+              height: 10px;
+              transition: all 150ms ease-in-out;
+              width: 10px;
+            }
+            #Available {
+              background-color: #10b981;
+            }
+            #Pending {
+              background-color: #ffd900;
+            }
+            #Booked {
+              background-color: #f43249;
+            }
+            .content {
+              align-items: center;
+              background-color: $secondary-color;
+              border-radius: 4px;
+              color: $white;
+              display: flex;
+              height: 16px;
+              justify-content: center;
+              line-height: 0;
+              padding: 0.5rem;
+              text-align: center;
+              width: 16px;
+              .chair-left {
+                left: -14px;
+                position: absolute;
+                top: 12px;
+              }
+              .chair-right {
+                position: absolute;
+                right: -14px;
+                top: 12px;
+              }
+              .chair-top {
+                display: flex;
+                justify-content: space-around;
+                left: 0;
+                position: absolute;
+                top: -14px;
+                width: 100%;
+                .chair {
+                  margin-left: 4px;
+                  margin-right: 4px;
+                }
+              }
+              .chair-bottom {
+                bottom: -14px;
+                display: flex;
+                justify-content: space-around;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                .chair {
+                  margin-left: 4px;
+                  margin-right: 4px;
+                }
+              }
+            }
+
+            .table-2 {
+              width: 40px;
+            }
+          }
+
+          #Available.selected {
+            opacity: 1 !important;
+            scale: 1.1;
+            .chair {
+              opacity: 1 !important;
+            }
+          }
+          #Available {
+            cursor: pointer;
+            opacity: 0.5;
+            user-select: none;
+          }
+          #Pending {
+            cursor: not-allowed;
+            opacity: 0.5;
+            user-select: none;
+          }
+
+          #Booked {
+            cursor: not-allowed;
+            opacity: 0.5;
+            user-select: none;
+          }
+          .single {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+          }
+          .multi {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            width: 100%;
+          }
+        }
+
+        .make-reservation {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          margin-top: 3rem;
+
+          button {
+            @include button(primary, lg);
+            padding: 1.5rem 2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -45,5 +45,5 @@ $container-xl: 1490px;
 // Transition
 
 $transition-short: all 250ms ease;
-$transition-default: all 350ms ease;
+$transition-default: all 350ms ease-in;
 $transition-long: all 450ms ease;

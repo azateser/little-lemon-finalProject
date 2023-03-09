@@ -117,10 +117,10 @@ In this project, from the beginning with figma wireframe design and figma UI des
 - [x] Footer <br />
     - [x] Component <br />
     - [x] Responsive <br />
-- [ ] Reservation Modal <br />
-    - [ ] Component <br />
-    - [ ] Responsive <br />
-    - [ ] Booking System <br />
+- [x] Reservation Modal <br />
+    - [x] Component <br />
+    - [x] Responsive <br />
+    - [x] Booking System <br />
 
 
 

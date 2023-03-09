@@ -6,9 +6,12 @@ import DefaultLogo from "../../assets/images/logos/logoDefault.png";
 import Cart from "../../assets/icons/cart.svg";
 import Menu from "../../assets/icons/menu.svg";
 import classNames from "classnames";
+import { Modal } from "../Modals/Modal";
 
 const Header = () => {
   const [active, setActive] = useState(false);
+
+  const [showModal, setShowModal] = useState(false);
 
   const isActive = (e) => {
     window.scrollY >= 50 ? setActive(true) : setActive(false);
@@ -22,9 +25,13 @@ const Header = () => {
   });
 
   return (
-    <header className={classNames({
-      "active-header": active,
-    })}>
+    <header
+      className={classNames({
+        "active-header": active,
+      })}
+    >
+      {showModal && <Modal showModal={showModal} setShowModal={setShowModal} />}
+
       <div className="container">
         <div className="logo">
           <img src={DefaultLogo} alt="default-logo" />
@@ -46,7 +53,9 @@ const Header = () => {
             <button className="button-menu">
               <img src={Menu} alt="" />
             </button>
-            <button className="button-primary">Reserve Table</button>
+            <button className="button-primary" onClick={() => setShowModal(true)}>
+              Reserve Table
+            </button>
           </div>
         </div>
       </div>
