@@ -62,7 +62,7 @@ In this project, from the beginning with figma wireframe design and figma UI des
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://azateser.github.io/little-lemon-finalProject/build)
 
 ---
 
@@ -121,6 +121,7 @@ In this project, from the beginning with figma wireframe design and figma UI des
     - [x] Component <br />
     - [x] Responsive <br />
     - [x] Booking System <br />
+- [x] Deploy <br />
 
 
 
