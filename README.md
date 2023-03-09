@@ -114,9 +114,9 @@ In this project, from the beginning with figma wireframe design and figma UI des
 - [x] Mobile App Section <br />
     - [x] Component <br />
     - [x] Responsive <br />
-- [ ] Footer <br />
-    - [ ] Component <br />
-    - [ ] Responsive <br />
+- [x] Footer <br />
+    - [x] Component <br />
+    - [x] Responsive <br />
 - [ ] Reservation Modal <br />
     - [ ] Component <br />
     - [ ] Responsive <br />
